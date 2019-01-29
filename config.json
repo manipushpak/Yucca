@@ -1,0 +1,5 @@
+{
+  "GCLOUD_PROJECT": "ramranch",
+  "DATA_BACKEND": "datastore",
+  "CLOUD_BUCKET": "ramranch-images"
+}

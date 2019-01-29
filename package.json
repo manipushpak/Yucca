@@ -1,0 +1,60 @@
+{
+  "name": "receive-mms-node",
+  "version": "1.0.0",
+  "scripts": {
+    "install": "npm run lint && npm test",
+    "lint": "node_modules/.bin/eslint ./",
+    "start": "node index.js",
+    "test": "export NODE_ENV=test TWILIO_ACCOUNT_SID=Your-Account-SID TWILIO_AUTH_TOKEN=Your-Twilio-Auth-Token TWILIO_NUMBER=+1707XXXXXXX && node_modules/.bin/mocha test test/**/*.spec.js"
+  },
+  "description": "How to receive MMS messages with node.js",
+  "author": {
+    "name": "José Oliveros",
+    "email": "jose.oliveros.1983@gmail.com",
+    "license": "MIT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TwilioDevEd/receive-mms-node"
+  },
+  "keywords": [
+    "node",
+    "twilio",
+    "express",
+    "sms",
+    "mms",
+    "images",
+    "notification"
+  ],
+  "engines": {
+    "node": ">=8.x"
+  },
+  "dependencies": {
+    "@google-cloud/datastore": "^2.0.0",
+    "@google-cloud/storage": "^2.3.4",
+    "body-parser": "^1.17.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "^2.6.9",
+    "exif": "^0.6.0",
+    "express": "^4.15.3",
+    "ext-name": "^5.0.0",
+    "lodash": "^4.17.4",
+    "morgan": "^1.8.2",
+    "node-fetch": "^1.7.1",
+    "serve-favicon": "^2.4.3",
+    "twilio": "^3.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "cheerio": "^1.0.0-rc.1",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint": "^3.19.0",
+    "mocha": "^3.1.2",
+    "mockery-partial": "^1.4.0",
+    "mockery": "^2.0.0",
+    "supertest": "^3.0.0"
+  }
+}
